@@ -213,7 +213,12 @@ Method 1: SQL query extract + regular R operations
 
 ```{r}
 #' method1_a
-#'
+#' 
+#' @description 
+#' This function extracts customer data from the provided Sakila database connection 
+#' and calculates the total number of customers and the percentage of active customers 
+#' for each store.
+#' 
 #' @returns A data.frame containing the store ID, total customers, active customers, 
 #' and the percentage of active customers.
 #' @export
@@ -238,6 +243,11 @@ Method 2: single SQL query
 ```{r}
 #' method2_a
 #'
+#' @description 
+#' This function extracts customer data from the provided Sakila database connection 
+#' and calculates the total number of customers and the percentage of active customers 
+#' for each store.
+#' 
 #' @returns A data.frame containing the store ID, total customers, active customers, 
 #' and the percentage of active customers.
 #' @export
@@ -284,7 +294,12 @@ Method 1: SQL query extract + regular R operations
 
 ```{r}
 #' method1_b
-#'
+#' 
+#' @description 
+#' This function extracts data from the 'staff', 'address', 'city', and 'country' 
+#' tables in the Sakila database, and merges them in R using dplyr to identify 
+#' the first name, last name, and country of each staff member.
+#' 
 #' @returns A data.frame containing three columns: first_name, last_name, and country.
 #' @export
 #'
@@ -315,6 +330,11 @@ Method 2: single SQL query
 ```{r}
 #' method2_b
 #'
+#' @description 
+#' This function extracts data from the 'staff', 'address', 'city', and 'country' 
+#' tables in the Sakila database, and merges them in R using dplyr to identify 
+#' the first name, last name, and country of each staff member.
+#' 
 #' @returns A data.frame containing three columns: first_name, last_name, and country.
 #' @export
 #'
@@ -359,6 +379,12 @@ Method 1: SQL query extract + regular R operations
 ```{r}
 #' method1_c
 #'
+#' @description 
+#' This function extracts payment, rental, inventory, and film data from the 
+#' Sakila database. It merges these tables, calculates the total revenue for 
+#' each film, and returns the title of the film that generated the highest 
+#' total rental revenue.
+#' 
 #' @returns A data.frame with one row containing two columns: the film 'title' 
 #' and its 'total_revenue'.
 #' @export
@@ -393,6 +419,12 @@ Method 2: single SQL query
 ```{r}
 #' method2_c
 #'
+#' @description 
+#' This function extracts payment, rental, inventory, and film data from the 
+#' Sakila database. It merges these tables, calculates the total revenue for 
+#' each film, and returns the title of the film that generated the highest 
+#' total rental revenue.
+#' 
 #' @returns A data.frame with one row containing two columns: the film 'title' 
 #' and its 'total_revenue'.
 #' @export
